@@ -21,6 +21,11 @@
     <tr>
       <th scope="col">Jméno</th>
       <th scope="col">Příjmení</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Telefon</th>
+      <th scope="col">Ulice</th>
+      <th scope="col">Město</th>
+      <th scope="col">PSČ</th>
     </tr>
   </thead>
   <tbody>
@@ -32,6 +37,21 @@
     </td>
     <td>   
       {{a.Prijmeni}} 
+    </td>
+    <td>   
+      {{a.Email}} 
+    </td>
+    <td>   
+      {{a.Telefon}} 
+    </td>
+    <td>   
+      {{a.Ulice}} 
+    </td>  
+    <td>   
+      {{a.Mesto}} 
+    </td>  
+    <td>   
+      {{a.PSC}} 
     </td>  
     </tr>
   </tbody>
@@ -47,8 +67,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      zaznamy: [{Jmeno: "Jan", Prijmeni: "Novak"},
-                {Jmeno: "Jan", Prijmeni: "Stary"}]
+      zaznamy: []
     }
   },
   methods:{dejdata(){
