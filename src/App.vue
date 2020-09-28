@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  <table class="table">
+    <table class="table">
   <thead class="thead-light">
     <tr>
       <th scope="col">Jméno</th>
@@ -92,7 +92,6 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
       zaznamy: []
     }
   },
