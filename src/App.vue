@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    
-    <table class="table">
+  <table class="table">
   <thead class="thead-light">
     <tr>
       <th scope="col">Jméno</th>
@@ -98,7 +97,6 @@ export default {
     }
   },
   methods:{dejdata(){
-        this.msg = 'jjj';
           axios({
             method:"get", //data z mongos databaze
             url:"http://127.0.0.1:3000",
