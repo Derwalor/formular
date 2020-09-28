@@ -1,21 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    
     <table class="table">
   <thead class="thead-light">
     <tr>
@@ -56,8 +41,50 @@
     </tr>
   </tbody>
 </table>
-  </div>
+<form>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault01">Jméno</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Jméno" value="Jan" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault02">Příjmení</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Příjmení" value="Novak" required>
+        </div>
+      </div>
 
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault04">Telefon</label>
+          <input type="text" class="form-control" id="validationDefault04" placeholder="Telefon" value="777777777" required>
+        </div>
+      <div class="col-md-4 mb-3">
+          <label for="validationDefaultEmail">E-mail</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            </div>
+            <input type="text" class="form-control" id="validationDefaultEmail" placeholder="jan.novak@email.com" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault05">Ulice</label>
+          <input type="text" class="form-control" id="validationDefault05" placeholder="Ulice" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault06">Město</label>
+          <input type="text" class="form-control" id="validationDefault06" placeholder="Město" required>
+        </div>
+        <div class="col-md-2 mb-3">
+          <label for="validationDefault07">PSČ</label>
+          <input type="text" class="form-control" id="validationDefault07" placeholder="PSČ" required>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Uložit záznam</button>
+    </form>
+  </div>
 </template>
 
 <script>
