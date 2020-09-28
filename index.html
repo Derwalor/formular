@@ -14,5 +14,49 @@
   <body>
     <div id="app"></div>
     <script src="/dist/build.js"></script>
+
+    <form>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault01">Jméno</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Jméno" value="Jan" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault02">Příjmení</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Příjmení" value="Novak" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault04">Telefon</label>
+          <input type="text" class="form-control" id="validationDefault04" placeholder="Telefon" value="777777777" required>
+        </div>
+      <div class="col-md-4 mb-3">
+          <label for="validationDefaultEmail">E-mail</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            </div>
+            <input type="text" class="form-control" id="validationDefaultEmail" placeholder="jan.novak@email.com" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault05">Ulice</label>
+          <input type="text" class="form-control" id="validationDefault05" placeholder="Ulice" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault06">Město</label>
+          <input type="text" class="form-control" id="validationDefault06" placeholder="Město" required>
+        </div>
+        <div class="col-md-2 mb-3">
+          <label for="validationDefault07">PSČ</label>
+          <input type="text" class="form-control" id="validationDefault07" placeholder="PSČ" required>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Uložit záznam</button>
+    </form>
   </body>
 </html>
